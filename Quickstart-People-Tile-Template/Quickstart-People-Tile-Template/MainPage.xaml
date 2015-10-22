@@ -1,0 +1,43 @@
+﻿<Page
+    x:Class="Quickstart_People_Tile_Template.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Quickstart_People_Tile_Template"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <ScrollViewer Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <StackPanel Margin="24">
+
+            <TextBlock
+                Text="Quickstart: People tile template"
+                Style="{StaticResource TitleTextBlockStyle}"
+                TextWrapping="Wrap"/>
+
+            <RichTextBlock Margin="0,12,0,0">
+                <Paragraph>
+                    This app illustrates how to use the People tile template using the local WinRT API's.
+                </Paragraph>
+            </RichTextBlock>
+
+            <Button
+                x:Name="ButtonUpdatePrimary"
+                Content="Click to update primary tile"
+                Click="ButtonUpdatePrimary_Click"
+                HorizontalAlignment="Stretch"
+                Margin="0,12,0,0"/>
+
+            <RichTextBlock Margin="0,12,0,0">
+                <Paragraph>The button above sends a new tile notification to the primary tile, utilizing the People tile template.</Paragraph>
+                <Paragraph />
+                <Paragraph>After clicking the button, look at your Start screen (pin this app if not pinned) and notice the People tile template on the tile.</Paragraph>
+            </RichTextBlock>
+
+        </StackPanel>
+
+
+
+    </ScrollViewer>
+</Page>
